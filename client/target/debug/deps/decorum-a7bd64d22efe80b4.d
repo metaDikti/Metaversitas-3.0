@@ -1,0 +1,11 @@
+C:\Users\Dell\Documents\metaversitas-game\client\target\debug\deps\libdecorum-a7bd64d22efe80b4.rmeta: C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\lib.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\canonical.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\cmp.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\constraint.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\hash.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\primitive.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\proxy.rs
+
+C:\Users\Dell\Documents\metaversitas-game\client\target\debug\deps\decorum-a7bd64d22efe80b4.d: C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\lib.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\canonical.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\cmp.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\constraint.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\hash.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\primitive.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\proxy.rs
+
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\lib.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\canonical.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\cmp.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\constraint.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\hash.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\primitive.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decorum-0.3.1\src\proxy.rs:

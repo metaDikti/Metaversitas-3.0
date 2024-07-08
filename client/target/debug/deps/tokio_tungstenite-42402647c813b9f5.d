@@ -1,0 +1,10 @@
+C:\Users\Dell\Documents\metaversitas-game\client\target\debug\deps\libtokio_tungstenite-42402647c813b9f5.rmeta: C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\lib.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\compat.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\connect.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\handshake.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\stream.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\tls.rs
+
+C:\Users\Dell\Documents\metaversitas-game\client\target\debug\deps\tokio_tungstenite-42402647c813b9f5.d: C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\lib.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\compat.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\connect.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\handshake.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\stream.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\tls.rs
+
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\lib.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\compat.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\connect.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\handshake.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\stream.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tokio-tungstenite-0.20.1\src\tls.rs:

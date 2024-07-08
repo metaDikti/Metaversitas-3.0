@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1861095508704086515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5383928050864002768}
+  m_Layer: 0
+  m_Name: LoadingScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5383928050864002768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861095508704086515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1648186967074408742}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2225317648371675256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1894955765311430169}
+  m_Layer: 0
+  m_Name: ConnectingScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1894955765311430169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225317648371675256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1648186967074408742}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4123333930343091319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1648186967074408742}
+  - component: {fileID: 1593395113051492137}
+  - component: {fileID: 625614256220199074}
+  - component: {fileID: 3330565823751264288}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1648186967074408742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4123333930343091319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1894955765311430169}
+  - {fileID: 5383928050864002768}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593395113051492137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4123333930343091319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0025886b7bc7f4fb6e84566673a988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _connectingScreen: {fileID: 2225317648371675256}
+  moduleAddress: Metaversitas
+  hostName: localhost:3001
+  sslEnabled: 1
+  _materi: 
+  _pertemuan: 
+  spawnpointObject: {fileID: 0}
+  mapIndex: 0
+  player:
+    role: 
+    uuid: 
+    full_name: 
+    nickname: 
+    gender: 
+    universitas: 
+    kodeuniv: 
+    fakultas: 
+    jurusan: 
+  _connected: 0
+  _multiPlayer: 0
+  _singlePlayer: 0
+  _mMLocalController: {fileID: 55635739715726404, guid: 9dcef3ee5243c5a459eb1299daea18a9,
+    type: 3}
+  _fMLocalController: {fileID: 7171570114594032596, guid: a1cc7ab9be733ec40a69e990ad568a14,
+    type: 3}
+  _mDLocalController: {fileID: 7329986675270612564, guid: 92ba009279885114495543c616d85c7f,
+    type: 3}
+  _fDLocalController: {fileID: 4920412790330177658, guid: 871c7a81966b1ba42b99a73d25dffffc,
+    type: 3}
+  LocalController: {fileID: 0}
+--- !u!114 &625614256220199074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4123333930343091319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322672a8b04c16a4d8114d10ee9f0956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _loadScreen: {fileID: 1861095508704086515}
+  _homePage:
+    sceneAsset: {fileID: 102900000, guid: 198135e409633b74eb0ed72784ad4b10, type: 3}
+    scenePath: Assets/_Project/Scene/MainMenu.unity
+  _koin:
+    sceneAsset: {fileID: 0}
+    scenePath: 
+  _borobudur:
+    sceneAsset: {fileID: 102900000, guid: ac94f51c9bccce04eb782ebc8ec3d030, type: 3}
+    scenePath: Assets/_Project/Scene/Borobudur.unity
+  _pengenalanKomputer:
+    sceneAsset: {fileID: 102900000, guid: cc00f2cc5a2c10e44a9779f3f2e84b57, type: 3}
+    scenePath: Assets/_Project/Scene/PengenalanKomputer.unity
+  _maps:
+  - sceneAsset: {fileID: 102900000, guid: 198135e409633b74eb0ed72784ad4b10, type: 3}
+    scenePath: Assets/_Project/Scene/MainMenu.unity
+  - sceneAsset: {fileID: 102900000, guid: ac94f51c9bccce04eb782ebc8ec3d030, type: 3}
+    scenePath: Assets/_Project/Scene/Borobudur.unity
+  - sceneAsset: {fileID: 102900000, guid: cc00f2cc5a2c10e44a9779f3f2e84b57, type: 3}
+    scenePath: Assets/_Project/Scene/PengenalanKomputer.unity
+--- !u!114 &3330565823751264288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4123333930343091319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c687836e5ac272e4db207c18cdf12b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

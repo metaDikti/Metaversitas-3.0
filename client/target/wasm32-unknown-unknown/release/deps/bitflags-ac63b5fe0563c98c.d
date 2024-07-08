@@ -1,0 +1,11 @@
+C:\Users\Dell\Documents\metaversitas-game\client\target\wasm32-unknown-unknown\release\deps\libbitflags-ac63b5fe0563c98c.rmeta: C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\lib.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\iter.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\parser.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\traits.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\public.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\internal.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\external.rs
+
+C:\Users\Dell\Documents\metaversitas-game\client\target\wasm32-unknown-unknown\release\deps\bitflags-ac63b5fe0563c98c.d: C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\lib.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\iter.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\parser.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\traits.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\public.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\internal.rs C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\external.rs
+
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\lib.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\iter.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\parser.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\traits.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\public.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\internal.rs:
+C:\Users\Dell\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.5.0\src\external.rs:

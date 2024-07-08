@@ -1,0 +1,13 @@
+spacetime start
+spacetime publish -c Metaversitas
+cd C:\Users\Dell\Documents\metaversitas-game
+cd C:\Users\Dell\Documents\metaversitas-game\server
+mkdir -p ../metaversitas-game/Metaversitas_Client/Assets/module_bindings
+spacetime generate --out-dir ../metaversitas-game/Metaversitas_Client/Assets/module_bindings --lang csharp --project-path server
+com.unity.services.vivox
+spacetime logs Metaversitas
+spacetime sql Metaversitas "SELECT * FROM Lobby"
+spacetime sql Metaversitas "SELECT * FROM PlayerComponent"
+spacetime sql Metaversitas "SELECT * FROM MobileEntityComponent"
+spacetime sql Metaversitas "DELETE FROM PlayerComponent"
+spacetime sql Metaversitas "DELETE FROM Lobby"

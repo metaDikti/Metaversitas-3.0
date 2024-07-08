@@ -70,3 +70,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Metaversitas_Client/Library/
+Metaversitas_Client/Logs/
+Metaversitas_Client/obj/
+Metaversitas_Client/Temp/
+Metaversitas_Client/UserSettings/
+Metaversitas_Client_clone_0/
