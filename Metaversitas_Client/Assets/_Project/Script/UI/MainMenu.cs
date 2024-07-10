@@ -91,7 +91,7 @@ public class MainMenu : MonoBehaviour
                 lobby_Button.SetupLobbyUI(lobby);
             }
         }
-        mainMenu.SetActive(false);
+        //mainMenu.SetActive(false);
     }
 
     public void DeleteLobby(Lobby lobby)

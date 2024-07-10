@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // These are connection variables that are exposed on the GameManager
     // inspector. The cloud version of SpacetimeDB needs sslEnabled = true
     [SerializeField] private string moduleAddress = "YOUR_MODULE_DOMAIN_OR_ADDRESS";
-    [SerializeField] private string hostName = "localhost:3000";
+    [SerializeField] private string hostName = "testnet.spacetimedb.com";
     [SerializeField] private bool sslEnabled = false;
 
     // This is the identity for this player that is automatically generated
@@ -75,6 +75,8 @@ public class GameManager : MonoBehaviour
         mapLoading = GetComponent<MapLoading>();
         Application.runInBackground = true;
 
+        SpacetimeDBClient.instance.onSubscriptionApplied += OnSubscriptionApplied;
+
         SpacetimeDBClient.instance.onConnect += () =>
         {
             _connected = true;
@@ -112,8 +114,6 @@ public class GameManager : MonoBehaviour
         {
             AuthToken.SaveToken(token);
             local_identity = identity;
-            _localPlayer = PlayerComponent.FilterByOwnerId(local_identity);
-            Debug.Log($" Starting" + _localPlayer);
         };
 
         PlayerComponent.OnUpdate += (oldValue, newValue, dbEvent) =>
@@ -121,7 +121,6 @@ public class GameManager : MonoBehaviour
             // Handle the update, e.g., update the UI or game state
             Debug.Log($"Player in_game status updated: {newValue.InGame}");
         };
-        SpacetimeDBClient.instance.onSubscriptionApplied += OnSubscriptionApplied;
 
         PlayerComponent.OnUpdate += PlayerComponent_OnUpdate;
         PlayerComponent.OnInsert += PlayerComponent_OnInsert;
@@ -142,7 +141,7 @@ public class GameManager : MonoBehaviour
 
     private void Reducer_OnPublicChatMessageEvent(ReducerEvent reducerEvent, uint lobbyId, string message)
     {
-        var player = PlayerComponent.FilterByOwnerId(reducerEvent.Identity);
+        var player = (PlayerComponent)PlayerComponent.FilterByOwnerId((Identity)reducerEvent.Identity);
         if (player != null && lobbyId == _currentLobby.Id)
         {
             UIChatController.Instance.OnChatMessageReceived(player.Nickname + ": " + message);
@@ -152,7 +151,7 @@ public class GameManager : MonoBehaviour
 
     private void Reducer_OnSendPrivateMessageEvent(ReducerEvent reducerEvent, uint lobbyId, ulong senderId, ulong recipientId, string message)
     {
-        var player = PlayerComponent.FilterByOwnerId(reducerEvent.Identity);
+        var player = (PlayerComponent)PlayerComponent.FilterByOwnerId((Identity)reducerEvent.Identity);
         if (player != null && lobbyId == _currentLobby.Id && recipientId == _localPlayer.EntityId)
         {
             UIChatController.Instance.OnChatMessageReceived(player.Nickname + ": " + message);
@@ -257,7 +256,7 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("Participant Left: " + participantId);
                 RemoveSpawnedParticipant(participantId);
-                var player = PlayerComponent.FilterByOwnerId(participantId);
+                var player = (PlayerComponent)PlayerComponent.FilterByOwnerId(participantId);
                 DispawnRemoteCharacterController(player);
                 spawnedPlayers.Remove(participantId);
             }
@@ -292,7 +291,7 @@ public class GameManager : MonoBehaviour
 
     public void QueryPlayerComponentByEntityId(SpacetimeDB.Identity ownerId)
     {
-        PlayerComponent playerComponent = PlayerComponent.FilterByOwnerId(ownerId);
+        PlayerComponent playerComponent = (PlayerComponent)PlayerComponent.FilterByOwnerId(ownerId);
         if (playerComponent != null)
         {
             if (_currentParticipantsComponent.Add(playerComponent))
@@ -391,8 +390,16 @@ public class GameManager : MonoBehaviour
                                            player.uuid, player.full_name, player.nickname,
                                            player.universitas, player.kodeuniv, player.fakultas,
                                            player.jurusan);
-        _localPlayer = PlayerComponent.FilterByOwnerId(local_identity);
-        Debug.Log($"Create Player " + _localPlayer);
+        Debug.Log(local_identity);
+        _localPlayer = PlayerComponent.FindByOwnerId(local_identity);
+        if (_localPlayer != null)
+        {
+            Debug.Log($"Player found: EntityId={_localPlayer.EntityId}, Username={_localPlayer.Nickname}, {local_identity}");
+        }
+        else
+        {
+            Debug.Log($"No player found for the current identity. {local_identity}");
+        }
     }
 
     public void UpdateInGameStatus(bool Status)
@@ -579,7 +586,7 @@ public class GameManager : MonoBehaviour
             if (participant != local_identity && !spawnedPlayers.Contains(participant) && inGameScene)
             {
                 Debug.Log("Spawened: " + participant);
-                var player = PlayerComponent.FilterByOwnerId(participant);
+                var player = (PlayerComponent)PlayerComponent.FilterByOwnerId(participant);
                 SpawnRemoteCharacterController(player);
                 spawnedPlayers.Add(participant);
             }

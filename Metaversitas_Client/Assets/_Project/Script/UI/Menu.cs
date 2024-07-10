@@ -17,6 +17,5 @@ public class Menu : MonoBehaviour
     {
         open = false;
         gameObject.SetActive(false);
-        Debug.Log("Tesr");
     }
 }

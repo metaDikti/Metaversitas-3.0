@@ -29,12 +29,12 @@ public class RemotePlayer : MonoBehaviour
         MobileEntityComponent.OnUpdate += MobileEntityComponent_OnUpdate;
 
         // get the username for this player from the PlayerComponent table
-        PlayerComponent playerComp = PlayerComponent.FilterByEntityId(EntityId);        
+        PlayerComponent playerComp = (PlayerComponent)PlayerComponent.FilterByEntityId(EntityId);        
         Username = playerComp.Nickname;
 
         // get the last location for this player and set the initial 
         // position 
-        MobileEntityComponent mobPos = MobileEntityComponent.FilterByEntityId(EntityId);
+        MobileEntityComponent mobPos = (MobileEntityComponent)MobileEntityComponent.FilterByEntityId(EntityId);
         Vector3 playerPos = new Vector3(mobPos.Position.X, 0.0f, mobPos.Position.Z);
         Quaternion playerRot = new Quaternion(mobPos.Rotation.X, mobPos.Rotation.Y, mobPos.Rotation.Z, mobPos.Rotation.W);
         transform.position = new Vector3(playerPos.x, MathUtil.GetTerrainHeight(playerPos), playerPos.z);

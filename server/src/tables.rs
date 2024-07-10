@@ -9,7 +9,7 @@ pub struct Config {
     pub message_of_the_day: String,
 }
 
-#[spacetimedb(table)]
+#[spacetimedb(table(public))]
 #[derive(Clone)]
 pub struct Lobby {
     #[primarykey]
@@ -60,7 +60,7 @@ pub struct StdbQuaternion {
     pub w: f32,
 }
 
-#[spacetimedb(table)]
+#[spacetimedb(table(public))]
 pub struct SpawnableEntityComponent {
     // All entities that can be spawned in the world will have this component.
     // This allows us to find all objects in the world by iterating through
@@ -74,7 +74,7 @@ pub struct SpawnableEntityComponent {
 // This stores information related to all entities in our game. In this tutorial
 // all entities must at least have an entity_id, a position, a direction and they
 // must specify whether or not they are moving.
-#[spacetimedb(table)]
+#[spacetimedb(table(public))]
 #[derive(Clone)]
 pub struct MobileEntityComponent {
     #[primarykey]
@@ -93,7 +93,7 @@ pub struct MobileEntityComponent {
 // All players have this component and it associates an entity with the user's 
 // Identity. It also stores their username and whether or not they're logged in.
 #[derive(Clone)]
-#[spacetimedb(table)]
+#[spacetimedb(table(public))]
 pub struct PlayerComponent {
     // An entity_id that matches an entity_id in the `EntityComponent` table.
     #[primarykey]
@@ -114,7 +114,7 @@ pub struct PlayerComponent {
     pub logged_in: bool,
 }
 
-#[spacetimedb(table)]
+#[spacetimedb(table(public))]
 pub struct AnimationComponent {
     #[primarykey]
     pub entity_id: u64,
@@ -123,7 +123,7 @@ pub struct AnimationComponent {
 }
 
 // table  for chat message
-#[spacetimedb(table)]
+#[spacetimedb(table(public))]
 pub struct ChatMessage {
     #[primarykey]
     #[autoinc]

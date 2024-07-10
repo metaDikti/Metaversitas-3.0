@@ -9,7 +9,7 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-spacetimedb = "0.10.1"
+spacetimedb = "0.10.0"
 log = "0.4"
 base64 = "0.13.0"
 
